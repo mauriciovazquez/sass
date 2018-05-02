@@ -1,0 +1,29 @@
+//VARIABLES SASS
+
+//COLORES PRODUBAN
+$negroPrincipal: #444;
+$colorPrincipal: #cd120d;
+$blanco: #fff;
+$grisNeutro: #ccc;
+
+//GAMA DE GRISES BOOTSTRAP
+$gray-darker:  lighten(#000, 13.5%); // #222
+$gray-dark:    lighten(#000, 20%);   // #333
+$gray:         lighten(#000, 33.5%); // #555
+$gray-light:   lighten(#000, 46.7%); // #777
+$gray-lighter: lighten(#000, 93.5%); // #eee
+
+//COLORES MENSAJES BOOTSTRAP
+$primary: darken(#428bca, 6.5%); // #337ab7 azul
+$success: #5cb85c; // verde claro
+$info:    #5bc0de; // azul claro
+$warning: #f0ad4e; // amarillo claro
+$danger:  #d9534f; //rojo claro
+
+//TAMAÑOS PANTALLA DISPOSITIVOS
+$min-desktop-lg: 1200px; // DESKTOP
+$max-laptop-md: 1199px; // LAPTOP
+$min-laptop-md: 992px; // LAPTOP
+$max-tablet-sm: 991px; // TABLET
+$min-tablet-sm: 768px; // TABLET
+$max-mobile-xs: 767px; // MOBILE

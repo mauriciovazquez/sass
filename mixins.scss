@@ -1,0 +1,60 @@
+//MIXINS SASS
+
+@mixin clearfix() {
+  &:before, &:after {
+    display: table;
+    content: " ";
+  }
+  &:after {
+    clear: both;
+  }
+}
+
+@mixin borde-prueba() {
+  border: 1px solid red;
+}
+
+@mixin transition-duration() {
+  -webkit-transition-duration: 0.15s;
+     -moz-transition-duration: 0.15s;
+      -ms-transition-duration: 0.15s;
+          transition-duration: 0.15s;
+}
+
+@mixin border-radius($radius) {
+  -webkit-border-radius: $radius;
+     -moz-border-radius: $radius;
+      -ms-border-radius: $radius;
+          border-radius: $radius;
+}
+
+@mixin box-shadow() {
+  -webkit-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+     -moz-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+      -ms-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+          box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+@mixin linear-gradient-topbot($color1, $color2) {
+    background: $color1; /* For browsers that do not support gradients */
+    background: -webkit-linear-gradient($color1, $color2); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient($color1, $color2); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient($color1, $color2); /* For Firefox 3.6 to 15 */
+    background: linear-gradient($color1, $color2); /* Standard syntax */
+}
+
+@mixin linear-gradient-leftright($color1, $color2) {
+  background: $color1; /* For browsers that do not support gradients */
+  background: -webkit-linear-gradient(left, $color1 , $color2); /* For Safari 5.1 to 6.0 */
+  background: -o-linear-gradient(right, $color1, $color2); /* For Opera 11.1 to 12.0 */
+  background: -moz-linear-gradient(right, $color1, $color2); /* For Firefox 3.6 to 15 */
+  background: linear-gradient(to right, $color1 , $color2); /* Standard syntax */
+}
+
+@mixin linear-gradient-diag($color1, $color2) {
+  background: $color1; /* For browsers that do not support gradients */
+  background: -webkit-linear-gradient(left top, $color1, $color2); /* For Safari 5.1 to 6.0 */
+  background: -o-linear-gradient(bottom right, $color1, $color2); /* For Opera 11.1 to 12.0 */
+  background: -moz-linear-gradient(bottom right, $color1, $color2); /* For Firefox 3.6 to 15 */
+  background: linear-gradient(to bottom right, $color1, $color2); /* Standard syntax */
+}

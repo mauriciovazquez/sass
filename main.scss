@@ -1,0 +1,8 @@
+/* Custom CSS para Bootstrap */
+@import "mixins.scss";
+@import "variables.scss";
+
+/*GLOBAL*/
+p {
+  @include borde-prueba;
+}
